@@ -1,22 +1,35 @@
 # multilevel Inhertance
 
 class a:
+    b=40
+
+
     def displayA(self):
-        print("welcome AAA")
+        self.b=self.b
+        print(self.b)
 
 # inherit a in to b single inheritance
-class b(a):
+class b():
     def displayB(self):
         print("welcome BBB")
 
-class c(b):
+class c():
     def displayC(self):
         print("welcome to CCC")
-
+    def __init__(self):
+        print("dfdsfdf")
 
 # obj=b()
-obj=c()
+obj=a()
+obj2=b()
+obj3=c()
 obj.displayA()
-obj.displayB()
-obj.displayC()
+
+obj2.displayB()
+obj3.displayC()
+
+
+
+
+
 

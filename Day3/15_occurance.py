@@ -4,5 +4,9 @@ n = 14
 ans=[i for i in list if i!=n]
 print(ans)
 
-ans1=[i for i in list if i==n]
+ans1=[m for m in list if m!=n]
 print(ans1)
+
+
+# ans1=[i for i in list if i==n]
+# print(ans1)
